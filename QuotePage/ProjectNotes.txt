@@ -1,0 +1,15 @@
+// The quote project
+https://jsbeginners.com/random-quotes-project/
+
+
+0.1 find a way to connect current index page with the quote project page
+
+1 Create array with quotes
+2 figure out how to get random number in js
+3 Create function that will display value from the array
+4 Pass the random number as function parameter
+5 add button that generate the quote
+
+bonus
+add css style on the text
+ and when you click the button it change the background color of the page
