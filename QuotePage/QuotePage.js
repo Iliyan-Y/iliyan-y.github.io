@@ -37,7 +37,7 @@ function quoteFunction() {
 
   function backButton() {
     var createBackButton = document.createElement('button')
-    createBackButton.innerHTML = "Back Quote"
+    createBackButton.innerHTML = "First Quote";
     document.body.appendChild(createBackButton);
 
     createBackButton.addEventListener("click", function() {
@@ -46,9 +46,8 @@ function quoteFunction() {
     });
 
   }
-
- quoteButton();
  backButton();
+ quoteButton();
 }
 
 
