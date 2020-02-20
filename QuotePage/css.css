@@ -1,0 +1,38 @@
+body {
+  padding: 0.5em;
+  background-color: #cc9966;
+}
+
+#innerDiv {
+  background-color: #bf8040;
+  padding: 1em;
+  margin: 0.5em;
+  padding-top: 2em;
+
+
+}
+
+#p1 {
+  /* background-color: red; */
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  padding: 18%;
+  width: 25%;
+  margin: 0 auto;
+
+}
+
+.btn {
+  display: inline;
+  background-color: green;
+  color: white;
+  /* margin: 1em auto -0.25em 16em; */
+  padding: 1.3em;
+  font-size: 16px;
+  margin-top: 4em;
+  border-radius: 5px;
+}
+
+#btn-2 {
+  margin: 1em 1em -0.25em 32%;
+}
