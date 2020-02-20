@@ -16,8 +16,8 @@ body {
   /* background-color: red; */
   text-align: center;
   font-family: "Comic Sans MS", cursive, sans-serif;
-  padding: 18%;
-  width: 25%;
+  padding: 10%;
+  width: 38%;
   margin: 0 auto;
 
 }
@@ -29,7 +29,7 @@ body {
   /* margin: 1em auto -0.25em 16em; */
   padding: 1.3em;
   font-size: 16px;
-  margin-top: 4em;
+  margin-top: 3em;
   border-radius: 5px;
 }
 
