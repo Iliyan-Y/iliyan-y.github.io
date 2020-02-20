@@ -28,7 +28,7 @@ getQuotePage[2].innerHTML = "";
 var aTagQuote = document.createElement('a');
 var aTagText = document.createTextNode("QuotePage");
 aTagQuote.appendChild(aTagText);
-aTagQuote.setAttribute("href", "/quotepage/quotepage.html")
+aTagQuote.setAttribute("href", "/quotepage/index.html")
 
 
 getQuotePage[2].appendChild(aTagQuote);
