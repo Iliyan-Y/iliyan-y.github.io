@@ -2,7 +2,7 @@ document.onload = createMenu();
 
 function createMenu() {
 
-  var menu = ["Home", "Menu", "Page 2"];
+  var menu = ["Home", "Message Page", "Page 2"];
 
   var listContainer = document.createElement('div');
   var listeElement = document.createElement('ul');
@@ -29,6 +29,12 @@ var aTagQuote = document.createElement('a');
 var aTagText = document.createTextNode("QuotePage");
 aTagQuote.appendChild(aTagText);
 aTagQuote.setAttribute("href", "/QuotePage")
-
-
+// insert the link into the page 
 getQuotePage[2].appendChild(aTagQuote);
+
+//add the link to the message page
+getQuotePage[1].innerHTML = "";
+var aTagMessagePage = document.createElement('a');
+aTagMessagePage.innerHTML = "Message Page";
+getQuotePage[1].appendChild(aTagMessagePage);
+aTagMessagePage.setAttribute("href", "/PassTheMessage");
