@@ -11,28 +11,37 @@ var h3Text = document.createTextNode("Write a message!");
 h3Tag.appendChild(h3Text);
 boxDiv.appendChild(h3Tag);
 
-var textField = document.createElement("input");
-textField.setAttribute("type", "text");
+var textField = document.createElement("textarea");
+textField.setAttribute("cols", "20");
+textField.setAttribute("rows", "5");
+textField.setAttribute("id", "text");
 boxDiv.appendChild(textField);
 
 var submitButton = document.createElement("input");
 submitButton.setAttribute('type', 'submit');
 submitButton.setAttribute("id", "send");
+var wrapDivButton = document.createElement('div');
+wrapDivButton.setAttribute("id", "wrapDivButton");
 //submitButton.setAttribute('value', 'send');
-boxDiv.appendChild(submitButton);
+boxDiv.appendChild(wrapDivButton);
+wrapDivButton.appendChild(submitButton);
 
 var lastMessage = document.createElement('h4');
 lastMessage.innerHTML = "The Last Message You Send";
 boxDiv.appendChild(lastMessage);
 
-var messageDisplay = document.createElement('h4');
+var messageDisplay = document.createElement('h3');
+messageDisplay.setAttribute("id","messageDisplay");
+var messageBox = document.createElement('div');
+messageBox.setAttribute('id', "messageBox");
+boxDiv.appendChild(messageBox);
 
-//add the text to the message field 
+//add the text to the message field
 function submit() {
   // set the return message to be the value of the input box
   // value==name== text inside something AND you can grab it
   messageDisplay.innerHTML = textField.value;
-  boxDiv.appendChild(messageDisplay);
+  messageBox.appendChild(messageDisplay);
 };
 
 //add multiple events to the button
