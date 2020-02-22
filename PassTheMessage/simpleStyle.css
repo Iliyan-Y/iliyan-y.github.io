@@ -1,0 +1,14 @@
+body {
+	background-color: #696969;
+	}
+#boxDiv {
+	background-color:  #DCDCDC;
+	with: 250px;
+	height: 250px;
+	display: block;
+	text-align: center;
+}
+#send {
+	background-color: red;
+	display: inline-block;
+}

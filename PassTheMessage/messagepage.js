@@ -1,12 +1,13 @@
 // create required tags
 var outerDiv = document.createElement('div');
+outerDiv.setAttribute("id","outerDiv");
 var boxDiv = document.createElement('div');
 boxDiv.setAttribute("id", "boxDiv");
 document.body.appendChild(outerDiv);
 outerDiv.appendChild(boxDiv);
 
 var h3Tag = document.createElement('h3');
-var h3Text = document.createTextNode("Write a message!")
+var h3Text = document.createTextNode("Write a message!");
 h3Tag.appendChild(h3Text);
 boxDiv.appendChild(h3Tag);
 
@@ -16,6 +17,7 @@ boxDiv.appendChild(textField);
 
 var submitButton = document.createElement("input");
 submitButton.setAttribute('type', 'submit');
+submitButton.setAttribute("id", "send");
 //submitButton.setAttribute('value', 'send');
 boxDiv.appendChild(submitButton);
 
