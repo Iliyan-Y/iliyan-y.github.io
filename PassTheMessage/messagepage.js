@@ -40,9 +40,10 @@ boxDiv.appendChild(messageBox);
 function submit() {
   // set the return message to be the value of the input box
   // value==name== text inside something AND you can grab it
-  if (textField.value !== "") {
+  if (textField.value !== "" && textField.value !== "\n") {
   messageDisplay.innerHTML = textField.value;
   messageBox.appendChild(messageDisplay);
+  textField.value = null;
   } else {
   	errorMessage();
  };
@@ -72,6 +73,6 @@ function errorMessage() {
  noMessageError.appendChild(textError);
   boxDiv.insertBefore(noMessageError,  lastMessage);
   setTimeout(function() {
-  noMessageError. removeChild(textError);
+  noMessageError.removeChild(textError);
   }, 3500);
 }
