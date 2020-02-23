@@ -40,8 +40,12 @@ boxDiv.appendChild(messageBox);
 function submit() {
   // set the return message to be the value of the input box
   // value==name== text inside something AND you can grab it
+  if (textField.value !== "") {
   messageDisplay.innerHTML = textField.value;
   messageBox.appendChild(messageDisplay);
+  } else {
+  	errorMessage();
+ };
 };
 
 //add multiple events to the button
@@ -60,3 +64,14 @@ textField.addEventListener('keypress', function(event) {
   submit();
   }
 });
+
+function errorMessage() {
+ var noMessageError = document.createElement('p');
+ var textError = document. createTextNode("Pleace type something");
+ noMessageError.style.color = "red";
+ noMessageError.appendChild(textError);
+  boxDiv.insertBefore(noMessageError,  lastMessage);
+  setTimeout(function() {
+  noMessageError. removeChild(textError);
+  }, 3500);
+}
